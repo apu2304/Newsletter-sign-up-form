@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+
+<body>
+
+  <main>
+    <div class="grid">
+      <form class="form" novalidate>
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li><img src="assets/images/icon-list.svg" alt="">Product discovery and building what matters</li>
+          <li><img src="assets/images/icon-list.svg" alt="">Measuring to ensure updates are a success</li>
+          <li><img src="assets/images/icon-list.svg" alt="">And much more!</li>
+        </ul>
+        <label class="input">
+          <span class="email">Email address:</span>
+          <span class="meassage"></span>
+          <input type="email" name="email" placeholder="email@company.com">
+        </label>
+        <button class="btn">Subscribe to monthly newsletter</button>
+      </form>
+      <picture class="img">
+        <source media="(max-width: 460px )" srcset="./assets/images/illustration-sign-up-mobile.svg">
+        <img src="assets/images/illustration-sign-up-desktop.svg" alt="illustration">
+      </picture>
+    </div>
+    <div class="popupWrapper">
+      <div class="popup">
+        <div class="popContent">
+          <img src="assets/images/icon-success.svg" alt="">
+          <h1>Thanks for subscribing!</h1>
+          <p>A confirmation email has been sent to ash@loremcompany.com.
+            Please open it and click the button inside to confirm your subscription.</p>
+          <button class="btn dismiss"> Dismiss message</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Arpita paul</a>.
+  </div>
+</body>
+
+</html>
